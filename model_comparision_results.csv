@@ -1,0 +1,12 @@
+model_filename = {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "KNN": "knn.joblib",
+    "Naive Bayes": "naive_bayes.joblib",
+    "Support Vector Machine": "svm.joblib"
+}
+
+joblib.dump(
+    pipeline,
+    os.path.join("model", model_filename[name])
+)
